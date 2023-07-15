@@ -1,2 +1,2 @@
-# Challengue2
+# Challenge2
 Parcial Practicas Profesionalizantes 
