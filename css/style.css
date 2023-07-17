@@ -1,0 +1,100 @@
+/* Importando la normalizacion de la pagina Normalize.css */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+/* Variables CSS */
+:root {
+  --font-family: Arial, sans-serif;
+  --background-color: #959f6c;
+  --container-max-width: 400px;
+  --container-margin: 40px auto;
+  --container-background-color: #ffffff;
+  --container-padding: 20px;
+  --container-border-radius: 8px;
+  --container-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  --display-width: 94%;
+  --display-height: 60px;
+  --display-font-size: 24px;
+  --display-text-align: right;
+  --display-padding: 10px;
+  --display-margin-bottom: 20px;
+  --grid-display: grid;
+  --grid-template-columns: repeat(4, 1fr);
+  --grid-gap: 10px;
+  --grid-margin-bottom: 10px;
+  --button-width: 100%;
+  --button-height: 50px;
+  --button-font-size: 20px;
+  --button-background-color: #4caf50;
+  --button-color: #ffffff;
+  --button-border: none;
+  --button-border-radius: 4px;
+  --button-cursor: pointer;
+  --button-hover-background-color: #45a049;
+  --padding: 10px;
+  --header-font-size: 24px;
+  --header-font-weight: bold;
+  --header-text-align: center; 
+}
+
+/* NOMENCLATURA BEM */
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+    text-align: var(--header-text-align);
+    background-color: var(--background-color);
+    padding: var(--padding);
+    font-size: var(--header-font-size);
+    font-weight: var(--header-font-weight);
+  }
+
+.container {
+  max-width: var(--container-max-width);
+  margin: var(--container-margin);
+  background-color: var(--container-background-color);
+  padding: var(--container-padding);
+  border-radius: var(--container-border-radius);
+  box-shadow: var(--container-box-shadow);
+}
+
+#display {
+  width: var(--display-width);
+  height: var(--display-height);
+  font-size: var(--display-font-size);
+  text-align: var(--display-text-align);
+  padding: var(--display-padding);
+  margin-bottom: var(--display-margin-bottom);
+}
+
+.grid {
+  display: var(--grid-display);
+  grid-template-columns: var(--grid-template-columns);
+  grid-gap: var(--grid-gap);
+  margin-bottom: var(--grid-margin-bottom);
+}
+
+.container2{
+    text-align: var(--header-text-align);
+    background-color: var(--background-color);
+    padding: var(--padding);
+}
+
+input[type="button"] {
+  width: var(--button-width);
+  height: var(--button-height);
+  font-size: var(--button-font-size);
+  background-color: var(--button-background-color);
+  color: var(--button-color);
+  border: var(--button-border);
+  border-radius: var(--button-border-radius);
+  cursor: var(--button-cursor);
+}
+
+input[type="button"]:hover {
+  background-color: var(--button-hover-background-color);
+}
+  
